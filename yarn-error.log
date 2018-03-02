@@ -1,0 +1,79 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js build
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Android;C:\Windows\System32;C:\Program Files (x86)\Yarn\bin\;C:\Users\timi_\AppData\Local\Microsoft\WindowsApps;C:\Users\timi_\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\timi_\AppData\Roaming\npm;C:\Program Files\Heroku\bin;C:\Users\timi_\AppData\Local\Microsoft\WindowsApps;C:\Users\timi_\AppData\Local\Android\sdk\platform-tools;C:\Users\timi_\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "book-search-app",
+    "version": "1.0.0",
+    "description": "Book Search App made with React",
+    "main": "index.js",
+    "repository": "",
+    "scripts": {
+      "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+      "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+      "test:watch": "npm run test -- --watch",
+      "build": "webpack --config webpack.conf.js",
+      "deploy": "npm run build && gh-pages -d build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.2.1",
+      "babel-loader": "^6.2.0",
+      "babel-preset-es2015": "^6.1.18",
+      "babel-preset-react": "^6.1.18",
+      "chai": "^3.5.0",
+      "chai-jquery": "^2.0.0",
+      "jquery": "^2.2.1",
+      "jsdom": "^8.1.0",
+      "mocha": "^2.4.5",
+      "react-addons-test-utils": "^0.14.7",
+      "webpack": "^1.15.0",
+      "webpack-dev-server": "^1.16.5"
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "babel-preset-stage-1": "^6.1.18",
+      "google-books-search": "^0.3.1",
+      "lodash": "^3.10.1",
+      "react": "^0.14.3",
+      "react-dom": "^0.14.3",
+      "react-redux": "4.3.0",
+      "react-router": "^2.0.1",
+      "redux": "^3.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c webpack --config webpack.conf.js
+  Directory: C:\Users\timi_\react\book-search-app
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
